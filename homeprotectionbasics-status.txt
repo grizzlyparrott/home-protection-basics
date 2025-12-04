@@ -1,15 +1,9 @@
 Total: 249
-Existing: 5
-Missing: 244
+Existing: 24
+Missing: 225
 
 EXISTING:
 home-security/home-security-systems-explained.html
-home-security/best-door-and-window-locks.html
-home-security/indoor-vs-outdoor-security-cameras.html
-home-security/deterring-burglars-basics.html
-fire-safety/smoke-detector-placement-guide.html
-
-MISSING:
 home-security/diy-vs-pro-security-systems.html
 home-security/wireless-vs-wired-security-systems.html
 home-security/security-system-response-times.html
@@ -19,6 +13,7 @@ home-security/cellular-backup-benefits.html
 home-security/security-system-failure-points.html
 home-security/zone-based-security-planning.html
 home-security/false-alarm-prevention-guide.html
+home-security/best-door-and-window-locks.html
 home-security/reinforcing-door-frames.html
 home-security/deadbolt-installation-basics.html
 home-security/sliding-door-security-methods.html
@@ -28,7 +23,12 @@ home-security/securing-garage-side-doors.html
 home-security/double-door-security-principles.html
 home-security/high-risk-entry-point-analysis.html
 home-security/door-and-window-gap-inspection.html
+home-security/indoor-vs-outdoor-security-cameras.html
 home-security/camera-placement-guide.html
+home-security/deterring-burglars-basics.html
+fire-safety/smoke-detector-placement-guide.html
+
+MISSING:
 home-security/wired-vs-wireless-cameras.html
 home-security/night-vision-performance-basics.html
 home-security/motion-detection-settings.html
