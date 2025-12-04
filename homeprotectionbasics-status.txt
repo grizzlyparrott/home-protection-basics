@@ -1,6 +1,6 @@
 Total: 249
-Existing: 24
-Missing: 225
+Existing: 38
+Missing: 211
 
 EXISTING:
 home-security/home-security-systems-explained.html
@@ -25,10 +25,6 @@ home-security/high-risk-entry-point-analysis.html
 home-security/door-and-window-gap-inspection.html
 home-security/indoor-vs-outdoor-security-cameras.html
 home-security/camera-placement-guide.html
-home-security/deterring-burglars-basics.html
-fire-safety/smoke-detector-placement-guide.html
-
-MISSING:
 home-security/wired-vs-wireless-cameras.html
 home-security/night-vision-performance-basics.html
 home-security/motion-detection-settings.html
@@ -37,12 +33,16 @@ home-security/camera-weatherproofing-basics.html
 home-security/handling-backlight-and-glare.html
 home-security/privacy-and-interior-camera-policy.html
 home-security/driveway-camera-positioning.html
+home-security/deterring-burglars-basics.html
 home-security/security-lighting-placement.html
 home-security/securing-yard-gates.html
 home-security/identifying-vulnerable-fencing.html
 home-security/mailbox-security-basics.html
 home-security/safe-delivery-dropoff-setup.html
 home-security/preventing-ladder-access.html
+fire-safety/smoke-detector-placement-guide.html
+
+MISSING:
 home-security/securing-exterior-stored-tools.html
 home-security/motion-light-vs-dusk-to-dawn.html
 home-security/spotting-surveillance-blind-zones.html
