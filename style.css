@@ -1,287 +1,169 @@
-/* =================================
-   HOME PROTECTION BASICS – THEME
-   ================================= */
-
-:root {
-  --bg: #020617;
-  --bg-elevated: #02091c;
-  --card-bg: #020b24;
-  --card-bg-hover: #031024;
-  --border-subtle: rgba(148, 163, 184, 0.22);
-  --text-main: #e5e7eb;
-  --text-muted: #9ca3af;
-  --accent: #38bdf8;                 /* calm cyan/blue */
-  --accent-soft: rgba(56, 189, 248, 0.18);
-  --accent-strong: #7dd3fc;
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  --radius-lg: 18px;
-  --radius-md: 12px;
-  --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.85);
-  --shadow-soft: 0 14px 40px rgba(15, 23, 42, 0.9);
-}
-
-*,
-*::before,
-*::after {
+/* ======== BASIC RESET ======== */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  font-family: var(--font-sans);
-  background:
-    radial-gradient(circle at top, #020722 0, transparent 45%),
-    radial-gradient(circle at bottom, #020617 0, #020617 60%);
-  color: var(--text-main);
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e8e8e8;
+  background: #0f1520; /* dark navy */
+  scroll-behavior: smooth;
 }
-
-/* ====== Layout ====== */
 
 body {
-  display: flex;
-  flex-direction: column;
+  line-height: 1.6;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 40;
-  background: linear-gradient(to bottom, #020617f0, #020617e0, transparent);
-  backdrop-filter: blur(14px);
-}
-
-.header-inner {
-  max-width: 1120px;
+/* ======== GLOBAL CONTAINER ======== */
+.container {
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 14px 20px 10px;
+  padding: 2rem 0;
+}
+
+/* ======== HEADER ======== */
+header {
+  background: #0a0f18;
+  border-bottom: 1px solid #1f2633;
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.3rem;
+  color: #8bc5ff; /* soft blue highlight */
+}
+
+.tagline {
+  color: #c9c9c9;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* ======== NAVIGATION ======== */
+nav ul {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Brand */
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.brand-logo {
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--accent-strong);
-  background:
-    radial-gradient(circle at 30% 0%, rgba(56, 189, 248, 0.3), transparent 55%),
-    radial-gradient(circle at 70% 110%, rgba(59, 130, 246, 0.35), transparent 60%);
-}
-
-.brand-title {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.brand-subtitle {
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
-/* Nav */
-
-nav {
-  display: flex;
-  gap: 18px;
-  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 nav a {
-  font-size: 14px;
-  color: var(--text-muted);
+  color: #d8e2ef;
   text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 999px;
-  transition:
-    color 0.18s ease,
-    background-color 0.18s ease;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
 }
 
 nav a:hover {
-  color: var(--text-main);
-  background-color: rgba(148, 163, 184, 0.18);
+  border-bottom: 2px solid #8bc5ff;
 }
 
-nav a.active {
-  color: var(--accent-strong);
-  background-color: var(--accent-soft);
+nav li {
+  color: #8bc5ff;
+  font-weight: bold;
 }
 
-/* ====== Main / Containers ====== */
-
-main {
-  flex: 1;
+/* ======== MAIN CONTENT ======== */
+main h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 26px 20px 40px;
+main p {
+  margin-bottom: 1.5rem;
+  color: #d0d0d0;
+  font-size: 1.05rem;
 }
 
-/* Section descriptions like "These guides focus on real home security..." */
-
-.section-header {
-  margin-bottom: 24px;
-  padding: 18px 20px;
-  border-radius: var(--radius-lg);
-  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 55%);
-  border: 1px solid rgba(148, 163, 184, 0.3);
-}
-
-.section-header h1 {
-  margin: 0 0 6px;
-  font-size: 26px;
-}
-
-.section-header p {
-  margin: 0;
-  font-size: 14px;
-  color: var(--text-muted);
-}
-
-/* ====== Section index cards ====== */
-
+/* ======== CARD GRID ======== */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.card {
-  background-color: var(--card-bg);
-  border-radius: var(--radius-lg);
-  padding: 18px 18px 16px;
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-card);
-  transition:
-    transform 0.16s ease,
-    box-shadow 0.16s ease,
-    border-color 0.16s ease,
-    background-color 0.16s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  background-color: var(--card-bg-hover);
-  border-color: rgba(148, 163, 184, 0.45);
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.96);
-}
-
-.card h2,
-.card h3 {
-  margin: 0 0 8px;
-  font-size: 17px;
-  color: var(--text-main);
-}
-
-.card h2 a,
-.card h3 a {
-  color: inherit;
+/* ======== ARTICLE CARDS ======== */
+.article-card {
+  display: block;
+  background: #151b27; /* deep navy grey */
+  padding: 1.3rem;
+  border-radius: 6px;
   text-decoration: none;
+  border: 1px solid #1f2633;
+  transition: all 0.15s ease;
 }
 
-.card h2 a:hover,
-.card h3 a:hover {
-  color: var(--accent-strong);
+.article-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
-.card p {
-  margin: 0;
-  font-size: 13px;
-  color: var(--text-muted);
+.article-card p {
+  color: #c6c6c6;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
-/* ====== Article pages ====== */
-
-article.container {
-  max-width: 760px;
+.article-card:hover {
+  background: #1b2333;
+  border-color: #8bc5ff;
+  transform: translateY(-3px);
 }
 
-article h1 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 27px;
-}
-
-article p {
-  margin: 8px 0;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
+/* ======== ARTICLE PAGE CONTENT ======== */
 article h2 {
-  margin-top: 22px;
-  margin-bottom: 8px;
-  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  color: #ffffff;
 }
 
 article h3 {
-  margin-top: 18px;
-  margin-bottom: 6px;
-  font-size: 16px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.15rem;
+  color: #dce6f6;
 }
 
-article ul,
-article ol {
-  margin: 8px 0 14px 22px;
-  font-size: 14px;
+article p,
+article li {
+  color: #cfd3da;
+  margin-bottom: 1rem;
 }
 
-article li + li {
-  margin-top: 4px;
+article ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-article hr {
-  margin: 26px 0 18px;
-  border: none;
-  border-top: 1px solid rgba(148, 163, 184, 0.4);
+/* ======== FOOTER ======== */
+footer {
+  background: #0a0f18;
+  border-top: 1px solid #1f2633;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
 }
 
-.next-link {
-  font-size: 14px;
-  color: var(--accent-strong);
-  text-decoration: none;
+footer p {
+  color: #aeb9c9;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
 }
 
-.next-link:hover {
+/* ======== LINKS INSIDE ARTICLES ======== */
+article a {
+  color: #8bc5ff;
   text-decoration: underline;
 }
 
-/* ====== Footer ====== */
-
-footer {
-  border-top: 1px solid rgba(15, 23, 42, 0.9);
-  background-color: #020617;
-}
-
-.footer-inner {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 14px 20px 20px;
-  font-size: 12px;
-  color: var(--text-muted);
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
+article a:hover {
+  color: #b2daff;
 }
