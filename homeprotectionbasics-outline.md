@@ -1,52 +1,56 @@
-# HOME SECURITY (50)
-home-security/home-security-systems-explained.html | Home Security Systems Explained
-home-security/diy-vs-pro-security-systems.html | DIY vs Professional Security Systems
-home-security/wireless-vs-wired-security-systems.html | Wireless vs Wired Security Systems
-home-security/security-system-response-times.html | Security System Response Times
-home-security/alarm-sensor-types-overview.html | Alarm Sensor Types Overview
-home-security/choosing-a-security-hub.html | Choosing a Security Hub
-home-security/cellular-backup-benefits.html | Cellular Backup Benefits
-home-security/security-system-failure-points.html | Security System Failure Points
-home-security/zone-based-security-planning.html | Zone-Based Security Planning
-home-security/false-alarm-prevention-guide.html | False Alarm Prevention Guide
-home-security/best-door-and-window-locks.html | Best Door and Window Locks
-home-security/reinforcing-door-frames.html | Reinforcing Door Frames
-home-security/deadbolt-installation-basics.html | Deadbolt Installation Basics
-home-security/sliding-door-security-methods.html | Sliding Door Security Methods
-home-security/window-lock-types-explained.html | Window Lock Types Explained
-home-security/basement-window-security-basics.html | Basement Window Security Basics
-home-security/securing-garage-side-doors.html | Securing Garage Side Doors
-home-security/double-door-security-principles.html | Double Door Security Principles
-home-security/high-risk-entry-point-analysis.html | High-Risk Entry Point Analysis
-home-security/door-and-window-gap-inspection.html | Door and Window Gap Inspection
-home-security/indoor-vs-outdoor-security-cameras.html | Indoor vs Outdoor Security Cameras
-home-security/camera-placement-guide.html | Camera Placement Guide
-home-security/wired-vs-wireless-cameras.html | Wired vs Wireless Cameras
-home-security/night-vision-performance-basics.html | Night Vision Performance Basics
-home-security/motion-detection-settings.html | Motion Detection Settings
-home-security/avoiding-camera-blind-spots.html | Avoiding Camera Blind Spots
-home-security/camera-weatherproofing-basics.html | Camera Weatherproofing Basics
-home-security/handling-backlight-and-glare.html | Handling Backlight and Glare
-home-security/privacy-and-interior-camera-policy.html | Interior Camera Privacy Guidelines
-home-security/driveway-camera-positioning.html | Driveway Camera Positioning
-home-security/deterring-burglars-basics.html | Deterring Burglars
-home-security/security-lighting-placement.html | Security Lighting Placement
-home-security/securing-yard-gates.html | Securing Yard Gates
-home-security/identifying-vulnerable-fencing.html | Identifying Vulnerable Fencing
-home-security/mailbox-security-basics.html | Mailbox Security Basics
-home-security/safe-delivery-dropoff-setup.html | Safe Delivery Drop-Off Setup
-home-security/preventing-ladder-access.html | Preventing Ladder Access
-home-security/securing-exterior-stored-tools.html | Securing Exterior Stored Tools
-home-security/motion-light-vs-dusk-to-dawn.html | Motion Light vs Dusk-to-Dawn
-home-security/spotting-surveillance-blind-zones.html | Spotting Surveillance Blind Zones
-home-security/reinforcing-garage-interior-door.html | Reinforcing Garage Interior Door
-home-security/attic-and-crawlspace-security.html | Attic and Crawlspace Security
-home-security/securing-pool-areas.html | Securing Pool Areas
-home-security/perimeter-security-fundamentals.html | Perimeter Security Fundamentals
-home-security/evaluating-neighborhood-risk.html | Evaluating Neighborhood Risk
-home-security/night-security-routine.html | Night Security Routine
-home-security/safe-parking-security-basics.html | Safe Parking Security Basics
-home-security/staged-break-in-attempts.html | Identifying Staged Break-In Attempts
-home-security/how-burglars-select-homes.html | How Burglars Select Homes
-home-security/crime-prevention-through-design.html | Crime Prevention Through Environmental Design
+# FIRE SAFETY (50)
+fire-safety/smoke-detector-placement-guide.html | Smoke Detector Placement Guide
+fire-safety/carbon-monoxide-safety-basics.html | Carbon Monoxide Safety Basics
+fire-safety/fire-extinguisher-types-and-uses.html | Fire Extinguisher Types and Uses
+fire-safety/home-fire-alarm-maintenance.html | Home Fire Alarm Maintenance
+fire-safety/interconnected-alarm-benefits.html | Interconnected Alarm Benefits
+fire-safety/photoelectric-vs-ionization-alarms.html | Photoelectric vs Ionization Alarms
+fire-safety/alarm-testing-schedule.html | Alarm Testing Schedule
+fire-safety/replacing-smoke-detectors.html | Replacing Smoke Detectors
+fire-safety/reducing-false-smoke-alarms.html | Reducing False Smoke Alarms
+fire-safety/alarms-for-high-ceiling-homes.html | Alarms for High-Ceiling Homes
+fire-safety/home-fire-escape-plan-checklist.html | Home Fire Escape Plan Checklist
+fire-safety/two-story-escape-strategies.html | Two-Story Escape Strategies
+fire-safety/teaching-kids-fire-escape-basics.html | Teaching Kids Fire Escape Basics
+fire-safety/nighttime-fire-escape-planning.html | Nighttime Fire Escape Planning
+fire-safety/mobility-limited-escape-plans.html | Mobility-Limited Escape Plans
+fire-safety/apartment-fire-escape-guide.html | Apartment Fire Escape Guide
+fire-safety/identifying-primary-exits.html | Identifying Primary Exits
+fire-safety/meeting-point-planning.html | Meeting Point Planning
+fire-safety/smoke-crawling-technique-basics.html | Smoke Crawling Technique Basics
+fire-safety/multi-level-fire-escape-basics.html | Multi-Level Fire Escape Basics
+fire-safety/kitchen-fire-prevention-basics.html | Kitchen Fire Prevention Basics
+fire-safety/stovetop-fire-safety-basics.html | Stovetop Fire Safety Basics
+fire-safety/space-heater-safety-basics.html | Space Heater Safety Basics
+fire-safety/electrical-fire-prevention-basics.html | Electrical Fire Prevention Basics
+fire-safety/extension-cord-safety-basics.html | Extension Cord Safety Basics
+fire-safety/clothes-dryer-fire-prevention.html | Clothes Dryer Fire Prevention
+fire-safety/flammable-liquid-storage-basics.html | Flammable Liquid Storage Basics
+fire-safety/wildfire-defensible-space-basics.html | Wildfire Defensible Space Basics
+fire-safety/wildfire-evacuation-basics.html | Wildfire Evacuation Basics
+fire-safety/fireplace-maintenance-basics.html | Fireplace Maintenance Basics
+fire-safety/chimney-cleaning-basics.html | Chimney Cleaning Basics
+fire-safety/furnace-fire-hazard-basics.html | Furnace Fire Hazard Basics
+fire-safety/hvac-fire-risk-basics.html | HVAC Fire Risk Basics
+fire-safety/holiday-fire-safety-basics.html | Holiday Fire Safety Basics
+fire-safety/candle-safety-guidelines.html | Candle Safety Guidelines
+fire-safety/children-and-fire-safety-basics.html | Children and Fire Safety Basics
+fire-safety/fire-safety-for-renters.html | Fire Safety for Renters
+fire-safety/home-fire-drill-guide.html | Home Fire Drill Guide
+fire-safety/smoke-barrier-basics.html | Smoke Barrier Basics
+fire-safety/escape-ladder-use-basics.html | Escape Ladder Use Basics
+fire-safety/fire-extinguisher-maintenance-basics.html | Fire Extinguisher Maintenance Basics
+fire-safety/fire-risk-room-by-room.html | Fire Risk Room-by-Room
+fire-safety/fire-safety-myths-debunked.html | Fire Safety Myths Debunked
+fire-safety/common-fire-causes-analysis.html | Common Residential Fire Causes
+fire-safety/how-to-identify-fire-hazards.html | How to Identify Fire Hazards
+fire-safety/home-fire-suppression-basics.html | Home Fire Suppression Basics
+fire-safety/fire-safety-checkup-routine.html | Fire Safety Checkup Routine
+fire-safety/multi-family-fire-safety-basics.html | Multi-Family Fire Safety Basics
+fire-safety/rural-fire-response-limitations.html | Rural Fire Response Limitations
+
+
+
+
+
 
