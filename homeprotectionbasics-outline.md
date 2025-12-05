@@ -1,56 +1,51 @@
-# FIRE SAFETY (50)
-fire-safety/smoke-detector-placement-guide.html | Smoke Detector Placement Guide
-fire-safety/carbon-monoxide-safety-basics.html | Carbon Monoxide Safety Basics
-fire-safety/fire-extinguisher-types-and-uses.html | Fire Extinguisher Types and Uses
-fire-safety/home-fire-alarm-maintenance.html | Home Fire Alarm Maintenance
-fire-safety/interconnected-alarm-benefits.html | Interconnected Alarm Benefits
-fire-safety/photoelectric-vs-ionization-alarms.html | Photoelectric vs Ionization Alarms
-fire-safety/alarm-testing-schedule.html | Alarm Testing Schedule
-fire-safety/replacing-smoke-detectors.html | Replacing Smoke Detectors
-fire-safety/reducing-false-smoke-alarms.html | Reducing False Smoke Alarms
-fire-safety/alarms-for-high-ceiling-homes.html | Alarms for High-Ceiling Homes
-fire-safety/home-fire-escape-plan-checklist.html | Home Fire Escape Plan Checklist
-fire-safety/two-story-escape-strategies.html | Two-Story Escape Strategies
-fire-safety/teaching-kids-fire-escape-basics.html | Teaching Kids Fire Escape Basics
-fire-safety/nighttime-fire-escape-planning.html | Nighttime Fire Escape Planning
-fire-safety/mobility-limited-escape-plans.html | Mobility-Limited Escape Plans
-fire-safety/apartment-fire-escape-guide.html | Apartment Fire Escape Guide
-fire-safety/identifying-primary-exits.html | Identifying Primary Exits
-fire-safety/meeting-point-planning.html | Meeting Point Planning
-fire-safety/smoke-crawling-technique-basics.html | Smoke Crawling Technique Basics
-fire-safety/multi-level-fire-escape-basics.html | Multi-Level Fire Escape Basics
-fire-safety/kitchen-fire-prevention-basics.html | Kitchen Fire Prevention Basics
-fire-safety/stovetop-fire-safety-basics.html | Stovetop Fire Safety Basics
-fire-safety/space-heater-safety-basics.html | Space Heater Safety Basics
-fire-safety/electrical-fire-prevention-basics.html | Electrical Fire Prevention Basics
-fire-safety/extension-cord-safety-basics.html | Extension Cord Safety Basics
-fire-safety/clothes-dryer-fire-prevention.html | Clothes Dryer Fire Prevention
-fire-safety/flammable-liquid-storage-basics.html | Flammable Liquid Storage Basics
-fire-safety/wildfire-defensible-space-basics.html | Wildfire Defensible Space Basics
-fire-safety/wildfire-evacuation-basics.html | Wildfire Evacuation Basics
-fire-safety/fireplace-maintenance-basics.html | Fireplace Maintenance Basics
-fire-safety/chimney-cleaning-basics.html | Chimney Cleaning Basics
-fire-safety/furnace-fire-hazard-basics.html | Furnace Fire Hazard Basics
-fire-safety/hvac-fire-risk-basics.html | HVAC Fire Risk Basics
-fire-safety/holiday-fire-safety-basics.html | Holiday Fire Safety Basics
-fire-safety/candle-safety-guidelines.html | Candle Safety Guidelines
-fire-safety/children-and-fire-safety-basics.html | Children and Fire Safety Basics
-fire-safety/fire-safety-for-renters.html | Fire Safety for Renters
-fire-safety/home-fire-drill-guide.html | Home Fire Drill Guide
-fire-safety/smoke-barrier-basics.html | Smoke Barrier Basics
-fire-safety/escape-ladder-use-basics.html | Escape Ladder Use Basics
-fire-safety/fire-extinguisher-maintenance-basics.html | Fire Extinguisher Maintenance Basics
-fire-safety/fire-risk-room-by-room.html | Fire Risk Room-by-Room
-fire-safety/fire-safety-myths-debunked.html | Fire Safety Myths Debunked
-fire-safety/common-fire-causes-analysis.html | Common Residential Fire Causes
-fire-safety/how-to-identify-fire-hazards.html | How to Identify Fire Hazards
-fire-safety/home-fire-suppression-basics.html | Home Fire Suppression Basics
-fire-safety/fire-safety-checkup-routine.html | Fire Safety Checkup Routine
-fire-safety/multi-family-fire-safety-basics.html | Multi-Family Fire Safety Basics
-fire-safety/rural-fire-response-limitations.html | Rural Fire Response Limitations
-
-
-
-
-
-
+# INSURANCE BASICS (50)
+insurance-basics/homeowners-insurance-coverage-explained.html | Homeowners Insurance Coverage Explained
+insurance-basics/what-does-renters-insurance-cover.html | What Renters Insurance Covers
+insurance-basics/documenting-your-home-for-insurance.html | Documenting Your Home for Insurance
+insurance-basics/home-inventory-checklist.html | Home Inventory Checklist
+insurance-basics/types-of-home-insurance-policies.html | Types of Home Insurance Policies
+insurance-basics/dwelling-coverage-basics.html | Dwelling Coverage Basics
+insurance-basics/personal-property-coverage-basics.html | Personal Property Coverage Basics
+insurance-basics/liability-coverage-basics.html | Liability Coverage Basics
+insurance-basics/loss-of-use-coverage-basics.html | Loss of Use Coverage Basics
+insurance-basics/insurance-deductible-basics.html | Insurance Deductible Basics
+insurance-basics/understanding-policy-limits.html | Understanding Policy Limits
+insurance-basics/actual-cash-value-vs-replacement-cost.html | ACV vs Replacement Cost
+insurance-basics/flood-insurance-basics.html | Flood Insurance Basics
+insurance-basics/earthquake-insurance-basics.html | Earthquake Insurance Basics
+insurance-basics/wildfire-insurance-basics.html | Wildfire Insurance Basics
+insurance-basics/wind-and-hail-coverage-basics.html | Wind and Hail Coverage Basics
+insurance-basics/insurance-for-rental-properties.html | Insurance for Rental Properties
+insurance-basics/home-insurance-inspection-basics.html | Home Insurance Inspections
+insurance-basics/insurance-claim-process-basics.html | Insurance Claim Process Basics
+insurance-basics/avoiding-claim-denials.html | Avoiding Claim Denials
+insurance-basics/documenting-a-loss-properly.html | Documenting a Loss Properly
+insurance-basics/creating-a-home-inventory-video.html | Creating a Home Inventory Video
+insurance-basics/storing-insurance-documents-safely.html | Storing Insurance Documents Safely
+insurance-basics/renewing-your-insurance-policy.html | Renewing Your Insurance Policy
+insurance-basics/how-insurance-premiums-are-calculated.html | How Insurance Premiums Are Calculated
+insurance-basics/discounts-and-bundling-basics.html | Discounts and Bundling Basics
+insurance-basics/roof-age-and-insurance-impact.html | Roof Age and Insurance Impact
+insurance-basics/home-upgrades-that-affect-premiums.html | Home Upgrades That Affect Premiums
+insurance-basics/sewer-backup-coverage-basics.html | Sewer Backup Coverage Basics
+insurance-basics/home-business-insurance-basics.html | Home-Based Business Insurance Basics
+insurance-basics/insurance-for-condos-basics.html | Condo Insurance Basics
+insurance-basics/landlord-liability-basics.html | Landlord Liability Basics
+insurance-basics/insurance-adjuster-basics.html | Working with Insurance Adjusters
+insurance-basics/home-insurance-myths.html | Home Insurance Myths
+insurance-basics/what-to-do-after-a-house-fire.html | What to Do After a House Fire
+insurance-basics/what-to-do-after-a-burglary.html | What to Do After a Burglary
+insurance-basics/replacing-damaged-items-guide.html | Replacing Damaged Items Guide
+insurance-basics/personal-property-limits-explained.html | Personal Property Limits Explained
+insurance-basics/scheduling-high-value-items.html | Scheduling High-Value Items
+insurance-basics/insurance-endorsements-basics.html | Insurance Endorsements Basics
+insurance-basics/claims-vs-premium-impact.html | Claims vs Premium Impact
+insurance-basics/insurance-cancellation-reasons.html | Insurance Cancellation Reasons
+insurance-basics/how-to-shop-for-insurance.html | How to Shop for Insurance
+insurance-basics/insurance-proof-and-documents.html | Insurance Proof and Documents
+insurance-basics/home-insurance-for-new-buyers.html | Home Insurance for First-Time Buyers
+insurance-basics/understanding-insurance-exclusions.html | Understanding Insurance Exclusions
+insurance-basics/how-insurers-evaluate-risk.html | How Insurers Evaluate Risk
+insurance-basics/insurance-policy-review-basics.html | Insurance Policy Review Basics
+insurance-basics/when-to-re-shop-insurance.html | When to Re-Shop Your Insurance
+insurance-basics/insurance-for-manufactured-homes.html | Insurance for Manufactured Homes
