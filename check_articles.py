@@ -1,4 +1,5 @@
 import os
+from termcolor import colored  # Optional, remove if you don't want colored output
 
 OUTLINE_FILE = "homeprotectionbasics-outline.md"
 
@@ -7,48 +8,56 @@ def load_outline_paths(outline_path):
     with open(outline_path, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            # Skip headings, comments, blank lines
-            if not line or line.startswith("#"):
+            if not line or line.startswith("#") or "|" not in line:
                 continue
-            if "|" not in line:
-                continue
-
             left = line.split("|", 1)[0].strip()
-            # Only care about .html lines
             if not left.endswith(".html"):
                 continue
-
-            # Normalize to forward-slash paths as stored in the outline
             paths.append(left)
     return paths
+
+def get_all_html_files():
+    html_files = []
+    for root, dirs, files in os.walk("."):
+        for file in files:
+            if file.endswith(".html") and file != "index.html" and file != "404.html":
+                full_path = os.path.join(root, file).replace(".\\", "").replace("\\", "/")
+                html_files.append(full_path)
+    return html_files
 
 def main():
     root_dir = os.path.dirname(os.path.abspath(__file__))
     outline_path = os.path.join(root_dir, OUTLINE_FILE)
 
     if not os.path.exists(outline_path):
-        print(f"Outline file not found: {outline_path}")
+        print(f"❌ Outline file not found: {outline_path}")
         return
 
     all_paths = load_outline_paths(outline_path)
+    html_files = get_all_html_files()
+
     existing = []
     missing = []
+    extras = []
 
-    for rel_path in all_paths:
-        # Convert to OS path (Windows vs Linux)
-        fs_path = os.path.join(root_dir, rel_path.replace("/", os.sep))
-        if os.path.exists(fs_path):
-            existing.append(rel_path)
+    # Check for existing and missing
+    for path in all_paths:
+        if path in html_files:
+            existing.append(path)
         else:
-            missing.append(rel_path)
+            missing.append(path)
 
-    total = len(all_paths)
-    print(f"Total articles in outline: {total}")
-    print(f"Existing HTML files: {len(existing)}")
-    print(f"Missing HTML files: {len(missing)}")
-    print()
+    # Check for extras
+    for html in html_files:
+        if html not in all_paths:
+            extras.append(html)
 
-    print("=== EXISTING ARTICLES ===")
+    # Print results
+    print(colored(f"\n✅ Existing HTML files: {len(existing)}", "green"))
+    print(colored(f"❌ Missing HTML files: {len(missing)}", "red"))
+    print(colored(f"⚠️ Extra HTML files: {len(extras)}", "yellow"))
+
+    print("\n=== EXISTING ARTICLES ===")
     for p in existing:
         print(p)
 
@@ -56,20 +65,28 @@ def main():
     for p in missing:
         print(p)
 
-    # Optional: write a status file you can upload to ChatGPT if you want
+    print("\n=== EXTRA ARTICLES (not in outline) ===")
+    for p in extras:
+        print(p)
+
+    # Optional output to file
     status_path = os.path.join(root_dir, "homeprotectionbasics-status.txt")
     with open(status_path, "w", encoding="utf-8") as out:
-        out.write(f"Total: {total}\n")
+        out.write(f"Total in outline: {len(all_paths)}\n")
         out.write(f"Existing: {len(existing)}\n")
-        out.write(f"Missing: {len(missing)}\n\n")
-        out.write("EXISTING:\n")
+        out.write(f"Missing: {len(missing)}\n")
+        out.write(f"Extras: {len(extras)}\n")
+        out.write("=== EXISTING ===\n")
         for p in existing:
             out.write(p + "\n")
-        out.write("\nMISSING:\n")
+        out.write("=== MISSING ===\n")
         for p in missing:
             out.write(p + "\n")
+        out.write("=== EXTRAS ===\n")
+        for p in extras:
+            out.write(p + "\n")
 
-    print(f"\nStatus written to: {status_path}")
+    print(colored(f"\n📄 Status written to: {status_path}", "yellow"))
 
 if __name__ == "__main__":
     main()
