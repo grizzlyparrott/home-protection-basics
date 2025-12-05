@@ -1,10 +1,9 @@
 Total in outline: 49
-Existing: 1
-Missing: 48
+Existing: 13
+Missing: 36
 Extras: 60
 === EXISTING ===
 fire-safety/smoke-detector-placement-guide.html
-=== MISSING ===
 fire-safety/carbon-monoxide-safety-basics.html
 fire-safety/fire-extinguisher-types-and-uses.html
 fire-safety/home-fire-alarm-maintenance.html
@@ -17,6 +16,7 @@ fire-safety/alarms-for-high-ceiling-homes.html
 fire-safety/home-fire-escape-plan-checklist.html
 fire-safety/two-story-escape-strategies.html
 fire-safety/teaching-kids-fire-escape-basics.html
+=== MISSING ===
 fire-safety/nighttime-fire-escape-planning.html
 fire-safety/mobility-limited-escape-plans.html
 fire-safety/apartment-fire-escape-guide.html
