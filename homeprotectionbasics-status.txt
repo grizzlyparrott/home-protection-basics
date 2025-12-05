@@ -1,6 +1,6 @@
 Total in outline: 49
-Existing: 13
-Missing: 36
+Existing: 35
+Missing: 14
 Extras: 60
 === EXISTING ===
 fire-safety/smoke-detector-placement-guide.html
@@ -16,22 +16,7 @@ fire-safety/alarms-for-high-ceiling-homes.html
 fire-safety/home-fire-escape-plan-checklist.html
 fire-safety/two-story-escape-strategies.html
 fire-safety/teaching-kids-fire-escape-basics.html
-=== MISSING ===
-fire-safety/nighttime-fire-escape-planning.html
-fire-safety/mobility-limited-escape-plans.html
-fire-safety/apartment-fire-escape-guide.html
-fire-safety/identifying-primary-exits.html
-fire-safety/meeting-point-planning.html
-fire-safety/smoke-crawling-technique-basics.html
-fire-safety/multi-level-fire-escape-basics.html
-fire-safety/kitchen-fire-prevention-basics.html
-fire-safety/stovetop-fire-safety-basics.html
-fire-safety/space-heater-safety-basics.html
-fire-safety/electrical-fire-prevention-basics.html
-fire-safety/extension-cord-safety-basics.html
-fire-safety/clothes-dryer-fire-prevention.html
 fire-safety/flammable-liquid-storage-basics.html
-fire-safety/wildfire-defensible-space-basics.html
 fire-safety/wildfire-evacuation-basics.html
 fire-safety/fireplace-maintenance-basics.html
 fire-safety/chimney-cleaning-basics.html
@@ -53,6 +38,21 @@ fire-safety/home-fire-suppression-basics.html
 fire-safety/fire-safety-checkup-routine.html
 fire-safety/multi-family-fire-safety-basics.html
 fire-safety/rural-fire-response-limitations.html
+=== MISSING ===
+fire-safety/nighttime-fire-escape-planning.html
+fire-safety/mobility-limited-escape-plans.html
+fire-safety/apartment-fire-escape-guide.html
+fire-safety/identifying-primary-exits.html
+fire-safety/meeting-point-planning.html
+fire-safety/smoke-crawling-technique-basics.html
+fire-safety/multi-level-fire-escape-basics.html
+fire-safety/kitchen-fire-prevention-basics.html
+fire-safety/stovetop-fire-safety-basics.html
+fire-safety/space-heater-safety-basics.html
+fire-safety/electrical-fire-prevention-basics.html
+fire-safety/extension-cord-safety-basics.html
+fire-safety/clothes-dryer-fire-prevention.html
+fire-safety/wildfire-defensible-space-basics.html
 === EXTRAS ===
 home-security/alarm-sensor-types-overview.html
 home-security/attic-and-crawlspace-security.html
