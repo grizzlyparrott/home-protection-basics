@@ -1,9 +1,9 @@
 # INSURANCE BASICS (50)
-insurance-basics/homeowners-insurance-coverage-explained.html | Homeowners Insurance Coverage Explained
-insurance-basics/what-does-renters-insurance-cover.html | What Renters Insurance Covers
-insurance-basics/documenting-your-home-for-insurance.html | Documenting Your Home for Insurance
-insurance-basics/home-inventory-checklist.html | Home Inventory Checklist
-insurance-basics/types-of-home-insurance-policies.html | Types of Home Insurance Policies
+homeowners-insurance-coverage-explained.html | Homeowners Insurance Coverage Explained
+what-does-renters-insurance-cover.html | What Renters Insurance Covers
+documenting-your-home-for-insurance.html | Documenting Your Home for Insurance
+home-inventory-checklist.html | Home Inventory Checklist
+types-of-home-insurance-policies.html | Types of Home Insurance Policies
 insurance-basics/dwelling-coverage-basics.html | Dwelling Coverage Basics
 insurance-basics/personal-property-coverage-basics.html | Personal Property Coverage Basics
 insurance-basics/liability-coverage-basics.html | Liability Coverage Basics

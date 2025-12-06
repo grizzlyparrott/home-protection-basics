@@ -1,92 +1,82 @@
 import os
-from termcolor import colored  # Optional, remove if you don't want colored output
+from pathlib import Path
 
-OUTLINE_FILE = "homeprotectionbasics-outline.md"
+ROOT = Path(__file__).parent
+OUTLINE_FILE = ROOT / "homeprotectionbasics-outline.md"
+STATUS_FILE = ROOT / "homeprotectionbasics-status.txt"
 
-def load_outline_paths(outline_path):
-    paths = []
-    with open(outline_path, "r", encoding="utf-8") as f:
+def load_expected_filenames():
+    expected = []
+
+    with OUTLINE_FILE.open("r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            if not line or line.startswith("#") or "|" not in line:
+            if not line or line.startswith("#"):
                 continue
-            left = line.split("|", 1)[0].strip()
-            if not left.endswith(".html"):
-                continue
-            paths.append(left)
-    return paths
 
-def get_all_html_files():
-    html_files = []
-    for root, dirs, files in os.walk("."):
-        for file in files:
-            if file.endswith(".html") and file != "index.html" and file != "404.html":
-                full_path = os.path.join(root, file).replace(".\\", "").replace("\\", "/")
-                html_files.append(full_path)
-    return html_files
+            # Lines look like:
+            # insurance-basics/homeowners-insurance-coverage-explained.html | Title
+            # or:
+            # homeowners-insurance-coverage-explained.html | Title
+            parts = line.split("|", 1)
+            raw_path = parts[0].strip()
+
+            # Always compare by filename only
+            filename = raw_path.split("/")[-1].split("\\")[-1].strip()
+
+            if filename:
+                expected.append(filename)
+
+    return expected
+
+def load_actual_filenames():
+    actual = []
+
+    for path in ROOT.rglob("*.html"):
+        # ignore root index and 404 if you want; comment these lines out if not
+        rel = path.relative_to(ROOT)
+        if str(rel) in ("index.html", "404.html"):
+            continue
+
+        filename = path.name
+        actual.append(filename)
+
+    return actual
 
 def main():
-    root_dir = os.path.dirname(os.path.abspath(__file__))
-    outline_path = os.path.join(root_dir, OUTLINE_FILE)
+    expected = load_expected_filenames()
+    actual = load_actual_filenames()
 
-    if not os.path.exists(outline_path):
-        print(f"❌ Outline file not found: {outline_path}")
-        return
+    expected_set = set(expected)
+    actual_set = set(actual)
 
-    all_paths = load_outline_paths(outline_path)
-    html_files = get_all_html_files()
+    existing = sorted(expected_set & actual_set)
+    missing = sorted(expected_set - actual_set)
+    extras = sorted(actual_set - expected_set)
 
-    existing = []
-    missing = []
-    extras = []
+    lines = []
+    lines.append(f"Total in outline: {len(expected_set)}")
+    lines.append(f"Existing: {len(existing)}")
+    lines.append(f"Missing: {len(missing)}")
+    lines.append(f"Extras: {len(extras)}")
+    lines.append("")
 
-    # Check for existing and missing
-    for path in all_paths:
-        if path in html_files:
-            existing.append(path)
-        else:
-            missing.append(path)
+    lines.append("=== EXISTING ===")
+    for name in existing:
+        lines.append(name)
+    lines.append("")
 
-    # Check for extras
-    for html in html_files:
-        if html not in all_paths:
-            extras.append(html)
+    lines.append("=== MISSING ===")
+    for name in missing:
+        lines.append(name)
+    lines.append("")
 
-    # Print results
-    print(colored(f"\n✅ Existing HTML files: {len(existing)}", "green"))
-    print(colored(f"❌ Missing HTML files: {len(missing)}", "red"))
-    print(colored(f"⚠️ Extra HTML files: {len(extras)}", "yellow"))
+    lines.append("=== EXTRAS (ON DISK, NOT IN OUTLINE) ===")
+    for name in extras:
+        lines.append(name)
 
-    print("\n=== EXISTING ARTICLES ===")
-    for p in existing:
-        print(p)
-
-    print("\n=== MISSING ARTICLES ===")
-    for p in missing:
-        print(p)
-
-    print("\n=== EXTRA ARTICLES (not in outline) ===")
-    for p in extras:
-        print(p)
-
-    # Optional output to file
-    status_path = os.path.join(root_dir, "homeprotectionbasics-status.txt")
-    with open(status_path, "w", encoding="utf-8") as out:
-        out.write(f"Total in outline: {len(all_paths)}\n")
-        out.write(f"Existing: {len(existing)}\n")
-        out.write(f"Missing: {len(missing)}\n")
-        out.write(f"Extras: {len(extras)}\n")
-        out.write("=== EXISTING ===\n")
-        for p in existing:
-            out.write(p + "\n")
-        out.write("=== MISSING ===\n")
-        for p in missing:
-            out.write(p + "\n")
-        out.write("=== EXTRAS ===\n")
-        for p in extras:
-            out.write(p + "\n")
-
-    print(colored(f"\n📄 Status written to: {status_path}", "yellow"))
+    STATUS_FILE.write_text("\n".join(lines), encoding="utf-8")
+    print(f"Status written to: {STATUS_FILE}")
 
 if __name__ == "__main__":
     main()
