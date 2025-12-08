@@ -1,22 +1,38 @@
 Total in outline: 49
-Existing: 27
-Missing: 22
+Existing: 48
+Missing: 1
 Extras: 209
 
 === EXISTING ===
 attic-inspection-checklist.html
 backyard-safety-checklist.html
 basement-safety-checklist.html
+basic-disaster-readiness-checklist.html
 carbon-monoxide-safety-checklist.html
+cleaning-supply-safety-checklist.html
+fall-hazard-checklist.html
+fire-safety-training-checklist.html
 first-week-in-new-home-checklist.html
+freezing-weather-prep-checklist.html
+garage-fire-hazard-checklist.html
 garage-safety-checklist.html
+generator-maintenance-checklist.html
+heatwave-prep-checklist.html
+holiday-decoration-safety-checklist.html
+home-appliance-safety-checklist.html
 home-emergency-kit-checklist.html
 home-insurance-renewal-checklist.html
 home-nighttime-security-checklist.html
+home-safety-annual-review.html
 home-vacation-prep-checklist.html
+in-home-child-safety-inspection.html
+insurance-document-checklist.html
 kitchen-fire-safety-checklist.html
+landscaping-safety-checklist.html
 monthly-home-safety-checklist.html
 moving-into-a-new-home-security-steps.html
+natural-gas-safety-checklist.html
+new-home-walkthrough-checklist.html
 new-homeowner-safety-checklist.html
 new-parent-safety-checklist.html
 outdoor-security-walkthrough.html
@@ -25,35 +41,19 @@ printable-home-inventory-checklist.html
 renter-move-in-checklist.html
 renter-move-out-checklist.html
 seasonal-home-safety-checklist.html
+security-cameras-audit-checklist.html
+security-lighting-checklist.html
 senior-home-safety-checklist.html
+smart-home-security-inspection.html
 smoke-detector-maintenance-checklist.html
+storm-readiness-checklist.html
 summer-fire-risk-checklist.html
+water-damage-prevention-checklist.html
 weekend-security-upgrade-list.html
 window-and-door-inspection-checklist.html
 winterizing-your-home-checklist.html
 
 === MISSING ===
-basic-disaster-readiness-checklist.html
-cleaning-supply-safety-checklist.html
-fall-hazard-checklist.html
-fire-safety-training-checklist.html
-freezing-weather-prep-checklist.html
-garage-fire-hazard-checklist.html
-generator-maintenance-checklist.html
-heatwave-prep-checklist.html
-holiday-decoration-safety-checklist.html
-home-appliance-safety-checklist.html
-home-safety-annual-review.html
-in-home-child-safety-inspection.html
-insurance-document-checklist.html
-landscaping-safety-checklist.html
-natural-gas-safety-checklist.html
-new-home-walkthrough-checklist.html
-security-cameras-audit-checklist.html
-security-lighting-checklist.html
-smart-home-security-inspection.html
-storm-readiness-checklist.html
-water-damage-prevention-checklist.html
 yearly-home-safety-plan.html
 
 === EXTRAS (ON DISK, NOT IN OUTLINE) ===
