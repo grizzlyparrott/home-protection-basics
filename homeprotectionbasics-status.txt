@@ -1,6 +1,6 @@
 Total in outline: 49
-Existing: 25
-Missing: 24
+Existing: 38
+Missing: 11
 Extras: 160
 
 === EXISTING ===
@@ -29,8 +29,6 @@ extreme-cold-prep-basics.html
 extreme-heat-prep-basics.html
 family-communication-plan-basics.html
 flood-preparedness-basics.html
-
-=== MISSING ===
 fuel-storage-safety-basics.html
 go-bag-checklist.html
 home-first-aid-kit-basics.html
@@ -44,6 +42,8 @@ pet-emergency-prep-basics.html
 power-bank-and-generator-basics.html
 power-outage-prep-basics.html
 protecting-important-documents-at-home.html
+
+=== MISSING ===
 radiation-emergency-basics.html
 rural-emergency-prep-basics.html
 safe-room-basics.html
