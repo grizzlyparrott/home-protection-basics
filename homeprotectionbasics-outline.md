@@ -1,51 +1,52 @@
-# INSURANCE BASICS (50)
-homeowners-insurance-coverage-explained.html | Homeowners Insurance Coverage Explained
-what-does-renters-insurance-cover.html | What Renters Insurance Covers
-documenting-your-home-for-insurance.html | Documenting Your Home for Insurance
-home-inventory-checklist.html | Home Inventory Checklist
-types-of-home-insurance-policies.html | Types of Home Insurance Policies
-insurance-basics/dwelling-coverage-basics.html | Dwelling Coverage Basics
-insurance-basics/personal-property-coverage-basics.html | Personal Property Coverage Basics
-insurance-basics/liability-coverage-basics.html | Liability Coverage Basics
-insurance-basics/loss-of-use-coverage-basics.html | Loss of Use Coverage Basics
-insurance-basics/insurance-deductible-basics.html | Insurance Deductible Basics
-insurance-basics/understanding-policy-limits.html | Understanding Policy Limits
-insurance-basics/actual-cash-value-vs-replacement-cost.html | ACV vs Replacement Cost
-insurance-basics/flood-insurance-basics.html | Flood Insurance Basics
-insurance-basics/earthquake-insurance-basics.html | Earthquake Insurance Basics
-insurance-basics/wildfire-insurance-basics.html | Wildfire Insurance Basics
-insurance-basics/wind-and-hail-coverage-basics.html | Wind and Hail Coverage Basics
-insurance-basics/insurance-for-rental-properties.html | Insurance for Rental Properties
-insurance-basics/home-insurance-inspection-basics.html | Home Insurance Inspections
-insurance-basics/insurance-claim-process-basics.html | Insurance Claim Process Basics
-insurance-basics/avoiding-claim-denials.html | Avoiding Claim Denials
-insurance-basics/documenting-a-loss-properly.html | Documenting a Loss Properly
-insurance-basics/creating-a-home-inventory-video.html | Creating a Home Inventory Video
-insurance-basics/storing-insurance-documents-safely.html | Storing Insurance Documents Safely
-insurance-basics/renewing-your-insurance-policy.html | Renewing Your Insurance Policy
-insurance-basics/how-insurance-premiums-are-calculated.html | How Insurance Premiums Are Calculated
-insurance-basics/discounts-and-bundling-basics.html | Discounts and Bundling Basics
-insurance-basics/roof-age-and-insurance-impact.html | Roof Age and Insurance Impact
-insurance-basics/home-upgrades-that-affect-premiums.html | Home Upgrades That Affect Premiums
-insurance-basics/sewer-backup-coverage-basics.html | Sewer Backup Coverage Basics
-insurance-basics/home-business-insurance-basics.html | Home-Based Business Insurance Basics
-insurance-basics/insurance-for-condos-basics.html | Condo Insurance Basics
-insurance-basics/landlord-liability-basics.html | Landlord Liability Basics
-insurance-basics/insurance-adjuster-basics.html | Working with Insurance Adjusters
-insurance-basics/home-insurance-myths.html | Home Insurance Myths
-insurance-basics/what-to-do-after-a-house-fire.html | What to Do After a House Fire
-insurance-basics/what-to-do-after-a-burglary.html | What to Do After a Burglary
-insurance-basics/replacing-damaged-items-guide.html | Replacing Damaged Items Guide
-insurance-basics/personal-property-limits-explained.html | Personal Property Limits Explained
-insurance-basics/scheduling-high-value-items.html | Scheduling High-Value Items
-insurance-basics/insurance-endorsements-basics.html | Insurance Endorsements Basics
-insurance-basics/claims-vs-premium-impact.html | Claims vs Premium Impact
-insurance-basics/insurance-cancellation-reasons.html | Insurance Cancellation Reasons
-insurance-basics/how-to-shop-for-insurance.html | How to Shop for Insurance
-insurance-basics/insurance-proof-and-documents.html | Insurance Proof and Documents
-insurance-basics/home-insurance-for-new-buyers.html | Home Insurance for First-Time Buyers
-insurance-basics/understanding-insurance-exclusions.html | Understanding Insurance Exclusions
-insurance-basics/how-insurers-evaluate-risk.html | How Insurers Evaluate Risk
-insurance-basics/insurance-policy-review-basics.html | Insurance Policy Review Basics
-insurance-basics/when-to-re-shop-insurance.html | When to Re-Shop Your Insurance
-insurance-basics/insurance-for-manufactured-homes.html | Insurance for Manufactured Homes
+# EMERGENCY PREP (50)
+emergency-prep/basic-home-emergency-kit-list.html | Basic Home Emergency Kit List
+emergency-prep/power-outage-prep-basics.html | Power Outage Prep Basics
+emergency-prep/protecting-important-documents-at-home.html | Protecting Important Documents at Home
+emergency-prep/short-term-evacuation-prep.html | Short-Term Evacuation Prep
+emergency-prep/water-storage-basics.html | Water Storage Basics
+emergency-prep/non-perishable-food-basics.html | Non-Perishable Food Basics
+emergency-prep/home-first-aid-kit-basics.html | Home First Aid Kit Basics
+emergency-prep/backup-lighting-options.html | Backup Lighting Options
+emergency-prep/communication-during-emergencies.html | Communication During Emergencies
+emergency-prep/power-bank-and-generator-basics.html | Power Bank and Generator Basics
+emergency-prep/shelter-in-place-basics.html | Shelter-in-Place Basics
+emergency-prep/extreme-heat-prep-basics.html | Extreme Heat Prep Basics
+emergency-prep/extreme-cold-prep-basics.html | Extreme Cold Prep Basics
+emergency-prep/earthquake-preparedness-basics.html | Earthquake Preparedness Basics
+emergency-prep/flood-preparedness-basics.html | Flood Preparedness Basics
+emergency-prep/wildfire-preparedness-basics.html | Wildfire Preparedness Basics
+emergency-prep/tornado-preparedness-basics.html | Tornado Preparedness Basics
+emergency-prep/hurricane-preparedness-basics.html | Hurricane Preparedness Basics
+emergency-prep/chemical-spill-preparedness.html | Chemical Spill Preparedness
+emergency-prep/radiation-emergency-basics.html | Radiation Emergency Basics
+emergency-prep/home-hazard-identification.html | Home Hazard Identification
+emergency-prep/emergency-water-filtration-basics.html | Emergency Water Filtration Basics
+emergency-prep/emergency-sanitation-basics.html | Emergency Sanitation Basics
+emergency-prep/family-communication-plan-basics.html | Family Communication Plan Basics
+emergency-prep/neighborhood-coordination-basics.html | Neighborhood Coordination Basics
+emergency-prep/emergency-cooking-basics.html | Emergency Cooking Basics
+emergency-prep/evacuation-route-planning.html | Evacuation Route Planning
+emergency-prep/go-bag-checklist.html | Go-Bag Checklist
+emergency-prep/stay-bag-checklist.html | Stay-Bag Checklist
+emergency-prep/security-during-disasters.html | Home Security During Disasters
+emergency-prep/medication-management-during-emergencies.html | Medication Management During Emergencies
+emergency-prep/pet-emergency-prep-basics.html | Pet Emergency Prep Basics
+emergency-prep/car-emergency-kit-basics.html | Car Emergency Kit Basics
+emergency-prep/backyard-fire-shelter-basics.html | Backyard Fire Shelter Basics
+emergency-prep/emergency-cash-storage-basics.html | Emergency Cash Storage Basics
+emergency-prep/urban-emergency-prep-basics.html | Urban Emergency Prep Basics
+emergency-prep/rural-emergency-prep-basics.html | Rural Emergency Prep Basics
+emergency-prep/bug-in-vs-bug-out-basics.html | Bug-In vs Bug-Out Basics
+emergency-prep/evacuation-loading-priorities.html | Evacuation Loading Priorities
+emergency-prep/avoiding-common-prep-mistakes.html | Avoiding Common Prep Mistakes
+emergency-prep/emergency-bike-prep-basics.html | Emergency Bicycle Prep Basics
+emergency-prep/fuel-storage-safety-basics.html | Fuel Storage Safety Basics
+emergency-prep/emergency-radio-basics.html | Emergency Radio Basics
+emergency-prep/home-hazard-map-basics.html | Home Hazard Mapping Basics
+emergency-prep/72-hour-survival-basics.html | 72-Hour Survival Basics
+emergency-prep/safe-room-basics.html | Safe Room Basics
+emergency-prep/backyard-water-collection-basics.html | Backyard Water Collection Basics
+emergency-prep/emergency-heating-options.html | Emergency Heating Options
+emergency-prep/after-disaster-reentry-basics.html | After-Disaster Re-Entry Basics
+
+
