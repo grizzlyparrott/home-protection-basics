@@ -1,11 +1,9 @@
 Total in outline: 49
-Existing: 0
-Missing: 49
+Existing: 25
+Missing: 24
 Extras: 160
 
 === EXISTING ===
-
-=== MISSING ===
 72-hour-survival-basics.html
 after-disaster-reentry-basics.html
 avoiding-common-prep-mistakes.html
@@ -31,7 +29,8 @@ extreme-cold-prep-basics.html
 extreme-heat-prep-basics.html
 family-communication-plan-basics.html
 flood-preparedness-basics.html
-2
+
+=== MISSING ===
 fuel-storage-safety-basics.html
 go-bag-checklist.html
 home-first-aid-kit-basics.html
