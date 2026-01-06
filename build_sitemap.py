@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 import os
-import datetime
+import subprocess
+from pathlib import Path
+from datetime import datetime, timezone
 from urllib.parse import quote
 
 # =======================
@@ -39,31 +41,46 @@ def file_to_url(path_rel):
     return BASE_URL + "/" + quote(path_rel)
 
 
-def get_lastmod(path_abs):
+def get_git_first_commit(file_path, repo_root):
+    """Get the FIRST commit timestamp for a file using Git."""
+    try:
+        result = subprocess.run(
+            ["git", "log", "--reverse", "--format=%cI", "--", str(file_path)],
+            cwd=repo_root,
+            capture_output=True,
+            text=True,
+            timeout=5
+        )
+        
+        if result.returncode == 0 and result.stdout.strip():
+            # Get the first line (earliest commit)
+            first_line = result.stdout.strip().split('\n')[0]
+            # Parse the ISO format date from git and return full timestamp
+            dt = datetime.fromisoformat(first_line.replace('Z', '+00:00'))
+            return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+        
+        return None
+    except (subprocess.SubprocessError, ValueError, OSError):
+        return None
+
+
+def get_file_modified(path_abs):
+    """Get the file system modification time as fallback (full timestamp)."""
+    mtime = os.path.getmtime(path_abs)
+    dt = datetime.fromtimestamp(mtime, tz=timezone.utc)
+    return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def get_lastmod(path_abs, repo_root):
     """
-    Get file last modified time in YYYY-MM-DD format (UTC).
+    Get last modified timestamp in YYYY-MM-DDTHH:MM:SSZ format.
+    Prefers Git commit date, falls back to file system date.
     """
-    ts = os.path.getmtime(path_abs)
-    dt = datetime.datetime.utcfromtimestamp(ts)
-    return dt.strftime("%Y-%m-%d")
-
-
-def get_priority(path_rel):
-    """
-    Basic priority rules:
-    - Root index.html: 1.0
-    - Folder index.html: 0.8
-    - Everything else: 0.6
-    """
-    path_rel = path_rel.replace(os.sep, "/")
-
-    if path_rel == "index.html":
-        return "1.0"
-
-    if path_rel.endswith("/index.html") or "/index.html" in path_rel:
-        return "0.8"
-
-    return "0.6"
+    git_date = get_git_first_commit(path_abs, repo_root)
+    if git_date:
+        return git_date
+    
+    return get_file_modified(path_abs)
 
 
 # =======================
@@ -72,6 +89,7 @@ def get_priority(path_rel):
 
 def collect_urls():
     urls = []
+    repo_root = Path(ROOT_DIR).resolve()
 
     for root, dirs, files in os.walk(ROOT_DIR):
         # Strip ignored dirs in-place
@@ -85,10 +103,9 @@ def collect_urls():
             path_rel = os.path.relpath(path_abs, ROOT_DIR)
 
             url = file_to_url(path_rel)
-            lastmod = get_lastmod(path_abs)
-            priority = get_priority(path_rel)
+            lastmod = get_lastmod(path_abs, repo_root)
 
-            urls.append((url, lastmod, priority))
+            urls.append((url, lastmod))
 
     return sorted(urls, key=lambda x: x[0])
 
@@ -98,12 +115,10 @@ def build_sitemap(urls):
     lines.append('<?xml version="1.0" encoding="UTF-8"?>')
     lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
 
-    for url, lastmod, priority in urls:
+    for url, lastmod in urls:
         lines.append("  <url>")
         lines.append(f"    <loc>{url}</loc>")
         lines.append(f"    <lastmod>{lastmod}</lastmod>")
-        lines.append(f"    <changefreq>weekly</changefreq>")
-        lines.append(f"    <priority>{priority}</priority>")
         lines.append("  </url>")
 
     lines.append("</urlset>")
