@@ -1,4 +1,3 @@
-
 guides/new-homeowner-safety-checklist.html | New Homeowner Safety Checklist
 guides/moving-into-a-new-home-security-steps.html | Moving Into a New Home Security Steps
 guides/printable-home-inventory-checklist.html | Home Inventory Checklist
