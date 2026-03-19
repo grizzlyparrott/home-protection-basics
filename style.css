@@ -36,6 +36,16 @@ header h1 {
   margin-bottom: 0.3rem;
   color: #8bc5ff; /* soft blue highlight */
 }
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-title:hover {
+  opacity: 0.8;
+}
 
 .tagline {
   color: #c9c9c9;
