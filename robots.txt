@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://homeprotectionbasics.com/sitemap.xml

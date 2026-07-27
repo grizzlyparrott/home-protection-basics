@@ -1,0 +1,10 @@
+{
+  "total_candidates": 266,
+  "missing_canonical": [
+    "guides/basic-disaster-readiness-checklist.html"
+  ],
+  "invalid_urls": [],
+  "duplicate_urls": [],
+  "canonical_mismatches": [],
+  "kept_count": 265
+}
