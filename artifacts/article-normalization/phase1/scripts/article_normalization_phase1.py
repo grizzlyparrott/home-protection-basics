@@ -50,6 +50,12 @@ BROKEN_LINK_REPAIR_MAP = {
     "/guides/home-security-walkthrough-checklist.html": "/guides/home-safety-annual-review.html",
     "../guides/children-home-safety-checklist.html": "/guides/in-home-child-safety-inspection.html",
     "insurance-proof-and-documents.html": "/insurance-basics/insurance-proof-and-documents.html",
+    "/home-security/camera-placement-basics.html": "/home-security/camera-placement-guide.html",
+    "/home-security/fixing-bad-security-footage.html": "/home-security/spotting-surveillance-blind-zones.html",
+    "/home-security/backyard-security-basics.html": "/guides/backyard-safety-checklist.html",
+    "/home-security/driveway-security-checklist.html": "/home-security/driveway-camera-positioning.html",
+    "../home-security/sliding-door-security-basics.html": "/home-security/sliding-door-security-methods.html",
+    "/guides/safe-and-secure-home-checklist.html": "/guides/monthly-home-safety-checklist.html",
 }
 
 
@@ -363,6 +369,20 @@ def normalize_links(soup: BeautifulSoup, rel: str) -> bool:
             except ValueError:
                 continue
             candidate = ROOT_DIR / candidate
+
+        if not candidate.exists() and not path.startswith(("/", "../", "./")) and "/" in path:
+            root_candidate = ROOT_DIR / path
+            if root_candidate.exists():
+                candidate = root_candidate
+            elif not Path(path).suffix:
+                root_html_candidate = root_candidate.with_suffix(".html")
+                if root_html_candidate.exists():
+                    candidate = root_html_candidate
+
+        if not candidate.exists() and not path.endswith(".html") and Path(path).suffix == "":
+            ext_candidate = candidate.with_suffix(".html")
+            if ext_candidate.exists():
+                candidate = ext_candidate
 
         if not candidate.exists():
             continue
