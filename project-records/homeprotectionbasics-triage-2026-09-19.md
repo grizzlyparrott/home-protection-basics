@@ -61,3 +61,26 @@ Scope was limited to ten URLs selected from the completed audit's demonstrated G
 - Existing normal phase-one article validation: 130 pages checked, 0 failures.
 - Sitemap regenerated after content commit: 265 URLs; 0 duplicate, canonical-mismatch, missing-canonical, or invalid-canonical exclusions. `lastmod` values now reflect the current Action 1/Action 2 commit history.
 - Deployed on the approved GitHub Pages `main` path in commits `e2575eaf46351ce8972ef1b14b622360066d5b61` and `7486fd5` on 2026-09-19. Live verification of all 10 refreshed URLs passed: HTTP 200, unchanged canonical URL, visible review date, visible source section, and `dateModified` Article schema.
+
+## HPB-A3 - priority-page factual visual system - 2026-09-19
+
+Scope remains limited to the same ten HPB-A2 URLs. No other articles were changed; no advertisements, affiliate links, commercial recommendations, sitewide redesign, or content rewrite was added.
+
+### Visual implementation
+
+- Added one original, source-controlled 1200 × 675 SVG explainer per priority article: smoke-alarm placement, alarm-type and power-source comparisons, replacement and chirp troubleshooting flows, security layers, window-lock/egress balance, DIY/professional tradeoffs, outage safety flow, and outage-readiness checklist.
+- Added a matching compressed 1200 × 675 PNG social card per article (approximately 24–37 KB each) for compatible Open Graph and Twitter/X previews. The in-article SVGs remain small (approximately 3.6–5.5 KB), contain no linked imagery/scripts/fonts, and are used as the Article-schema image.
+- Every visual has SVG title/description, specific article alt text, explicit dimensions, an adjacent caption, and a visible general-guidance boundary. The article hero is deliberately eager/async-decoded; the reusable CSS reserves its dimensions. Future below-the-fold visuals should be lazy-loaded.
+- Smoke-alarm, window, and power-outage visuals repeat the HPB-A2 safety boundaries: manufacturer instructions, local authority/adopted code, qualified work, emergency egress, and emergency guidance control. They do not present a diagram as a universal code plan.
+
+### Metadata, measurement, and reusable workflow
+
+- Added `summary_large_image`, complete Open Graph image fields, Twitter image/alt fields, and an `ImageObject` with explicit dimensions to each of the ten retained Article schemas. Canonical URLs, visible A2 review dates, sources, and core article intent were retained.
+- Added `assets/hpb-a3/README.md`, `visuals.css`, and source-controlled builders/validator. The documented standard is: factual explanatory visual first; accessible SVG with contextual caption; matching PNG social card; schema/social metadata; validate assets and all links before rollout.
+- Reused the existing GA4 `gtag` implementation only. `measurement.js` records source-reference opens and A2 related-cluster navigation; the outage-readiness checklist also records an intentional print action. No new analytics platform, identifiers, or sensitive data collection was introduced.
+
+### Validation before release
+
+- HPB-A3 validator passed for all 10 pages: well-formed self-contained SVGs; title/description; 1200 × 675 dimensions; small asset budget; article alt/caption; canonical preservation; internal-link resolution; PNG social assets; Open Graph/Twitter metadata; ImageObject fields; and GA4 hooks.
+- Existing phase-one normalizer validation passed: 130 files checked, 0 failures. `git diff --check` passed.
+- Regenerated sitemap: 265 canonical URLs, 0 duplicate, canonical-mismatch, missing-canonical, or invalid-canonical exclusions.
