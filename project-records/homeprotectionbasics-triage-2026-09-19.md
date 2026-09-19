@@ -60,3 +60,4 @@ Scope was limited to ten URLs selected from the completed audit's demonstrated G
 - Targeted validation: 10 pages, 100 internal anchors, canonical/schema/review-date/source/sitemap checks, 0 failures.
 - Existing normal phase-one article validation: 130 pages checked, 0 failures.
 - Sitemap regenerated after content commit: 265 URLs; 0 duplicate, canonical-mismatch, missing-canonical, or invalid-canonical exclusions. `lastmod` values now reflect the current Action 1/Action 2 commit history.
+- Deployed on the approved GitHub Pages `main` path in commits `e2575eaf46351ce8972ef1b14b622360066d5b61` and `7486fd5` on 2026-09-19. Live verification of all 10 refreshed URLs passed: HTTP 200, unchanged canonical URL, visible review date, visible source section, and `dateModified` Article schema.
