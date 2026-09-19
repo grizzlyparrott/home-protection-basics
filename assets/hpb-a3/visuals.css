@@ -1,0 +1,49 @@
+/* HPB-A3 factual visual system. Reuse only with a page-specific accessible SVG, caption, and source review. */
+.hpb-visual {
+  margin: 1.8rem 0 2rem;
+  border: 1px solid #2e4665;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0f1520;
+}
+
+.hpb-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 675;
+  background: #0f1520;
+}
+
+.hpb-visual figcaption {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid #2e4665;
+  color: #b7c9db;
+  font-size: 0.93rem;
+}
+
+.hpb-article-action { margin: -0.65rem 0 1.75rem; }
+
+.hpb-print-button {
+  border: 1px solid #8bc5ff;
+  border-radius: 6px;
+  background: #17324d;
+  color: #ffffff;
+  padding: 0.65rem 0.9rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hpb-print-button:hover,
+.hpb-print-button:focus-visible {
+  background: #235077;
+  outline: 3px solid #b2daff;
+  outline-offset: 3px;
+}
+
+@media print {
+  header, footer, .hpb-article-action { display: none; }
+  html, body { background: #ffffff; color: #111111; }
+  .hpb-visual { border-color: #777777; break-inside: avoid; }
+}
