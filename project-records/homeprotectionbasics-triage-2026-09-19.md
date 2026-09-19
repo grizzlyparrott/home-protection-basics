@@ -27,4 +27,8 @@ Scope was limited to discovery/indexing hygiene. No article body copy, site desi
 
 ## Release follow-up
 
-- Deployment commit and the live verification/submission result are recorded in the release response for this Action 1 task. Search-engine re-crawl and indexing decisions remain controlled by Google and Bing.
+- Deployed through the approved GitHub Pages `main` release path: commit `81ba42b9732392a87e3e7222789da3cb550f4205` on 2026-09-19.
+- Live verification: homepage, `robots.txt`, `sitemap.xml`, the valid SVG favicon, and the emergency-kit guide returned HTTP 200; all 265 sitemap URLs returned HTTP 200. The legacy favicon reference and the old placeholder URL are absent from the live sitemap.
+- Bing Webmaster Tools: submitted `https://homeprotectionbasics.com/sitemap.xml` on 2026-09-19. Bing displayed a successful-submission confirmation and recorded 265 discovered URLs; status is `Processing` while it recrawls (previous crawl was 2026-09-14).
+- Google Search Console: resubmitted the same sitemap on 2026-09-19. Google displayed `Sitemap submitted successfully`; the sitemap table immediately shows submitted and last-read dates of 2026-09-19, `Success`, and 265 discovered pages.
+- Search-engine recrawl cadence and final indexing decisions remain outside site control.
