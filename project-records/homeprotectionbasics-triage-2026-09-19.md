@@ -32,3 +32,31 @@ Scope was limited to discovery/indexing hygiene. No article body copy, site desi
 - Bing Webmaster Tools: submitted `https://homeprotectionbasics.com/sitemap.xml` on 2026-09-19. Bing displayed a successful-submission confirmation and recorded 265 discovered URLs; status is `Processing` while it recrawls (previous crawl was 2026-09-14).
 - Google Search Console: resubmitted the same sitemap on 2026-09-19. Google displayed `Sitemap submitted successfully`; the sitemap table immediately shows submitted and last-read dates of 2026-09-19, `Success`, and 265 discovered pages.
 - Search-engine recrawl cadence and final indexing decisions remain outside site control.
+
+## HPB-A2 - priority content-cluster refresh - 2026-09-19
+
+Scope was limited to ten URLs selected from the completed audit's demonstrated Google/Bing demand. Existing URLs, canonical URLs, search intent, navigation, and sitemap inclusion were retained. No image program, affiliate/monetization work, redesign, or broad conversion work was started.
+
+### Pages refreshed
+
+- Smoke-alarm cluster: `fire-safety/smoke-detector-placement-guide.html`, `photoelectric-vs-ionization-alarms.html`, `replacing-smoke-detectors.html`, `hardwired-vs-battery-smoke-detectors.html`, and `what-causes-smoke-detectors-to-chirp-or-beep.html`.
+- Home-security/window-lock cluster: `home-security/home-security-systems-explained.html`, `window-lock-types-explained.html`, and `diy-vs-pro-security-systems.html`.
+- Power-outage cluster: `emergency-prep/power-outage-prep-basics.html` and `guides/power-outage-readiness-checklist.html`.
+
+### Material safety/trust corrections
+
+- Replaced blanket smoke-alarm placement, spacing, type, replacement, garage, hardwiring, and chirp-fix assertions with USFA-backed general guidance plus explicit manufacturer, local-fire-authority, adopted-code, rental, and qualified-electrician boundaries. Removed the unsupported generic 30-foot spacing rule and the prior implication that one alarm type is universally better.
+- Replaced claims that monitoring, cellular backup, a lock, professional installation, or a particular system feature guarantees protection or response. Added provider-contract, local dispatch/registration, privacy, emergency-egress, and qualified-installation limits.
+- Added CPSC fall-prevention and fire-egress limits for window stops and guards; explicitly states that screens are not fall protection and that bedroom/egress openings must remain releasable as applicable.
+- Corrected power-outage safety: CDC's outdoors-and-more-than-20-feet generator rule, no indoor combustion devices or gas-oven heating, CO-alarm use, qualified transfer-equipment requirement, and FoodSafety.gov food-temperature/time rules.
+
+### Editorial/source implementation
+
+- Added visible `Reviewed and updated: September 19, 2026` notes, visible primary-source reference sections, and `dateModified` Article schema to every refreshed page. Page metadata, Open Graph, Twitter, and Article schema descriptions now match the cautious updated claims.
+- Primary sources used: U.S. Fire Administration smoke-alarm guidance and position statement; CDC power-outage and carbon-monoxide guidance; FoodSafety.gov emergency food-safety guidance; CPSC window-safety guidance; and CISA's physical/personal-security guidance.
+
+### Validation and release preparation
+
+- Targeted validation: 10 pages, 100 internal anchors, canonical/schema/review-date/source/sitemap checks, 0 failures.
+- Existing normal phase-one article validation: 130 pages checked, 0 failures.
+- Sitemap regenerated after content commit: 265 URLs; 0 duplicate, canonical-mismatch, missing-canonical, or invalid-canonical exclusions. `lastmod` values now reflect the current Action 1/Action 2 commit history.
