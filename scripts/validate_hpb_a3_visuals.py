@@ -53,6 +53,7 @@ def validate_page(relative: str, page: dict[str, str]) -> None:
     social = f"{BASE_URL}/assets/hpb-a3/social/{slug}.png"
     expected = [
         f'<link href="/assets/hpb-a3/visuals.css" rel="stylesheet"/>',
+        'https://www.googletagmanager.com/gtag/js?id=G-7NMENZF6EK',
         f'<figure class="hpb-visual" data-hpb-visual="{slug}"><img src="{hero}" width="1200" height="675"',
         f'fetchpriority="high"',
         f'<meta content="summary_large_image" name="twitter:card"/>',

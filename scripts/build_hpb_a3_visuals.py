@@ -10,6 +10,15 @@ ROOT = Path(__file__).resolve().parent.parent
 VISUAL_DIR = ROOT / "assets" / "hpb-a3"
 BASE_URL = "https://homeprotectionbasics.com"
 WIDTH, HEIGHT = 1200, 675
+GA4_ID = "G-7NMENZF6EK"
+GA4_SNIPPET = f'''<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA4_ID}');
+</script>'''
 
 PAGES = {
     "fire-safety/smoke-detector-placement-guide.html": {
@@ -161,6 +170,8 @@ def metadata(page: dict[str, str]) -> str:
 def update_page(relative: str, page: dict[str, str]) -> None:
     path = ROOT / relative
     source = path.read_text(encoding="utf-8")
+    if GA4_ID not in source:
+        source = source.replace('</head>', GA4_SNIPPET + '\n</head>', 1)
     if f'/assets/hpb-a3/{page["slug"]}.svg' in source:
         source = source.replace('<meta content="summary" name="twitter:card"/>', '<meta content="summary_large_image" name="twitter:card"/>')
         source, metadata_count = re.subn(r'<meta property="og:image" content="[^"]+"/><meta property="og:image:secure_url" content="[^"]+"/><meta property="og:image:type" content="[^"]+"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="675"/><meta property="og:image:alt" content="[^"]+"/><meta name="twitter:image" content="[^"]+"/><meta name="twitter:image:alt" content="[^"]+"/>', metadata(page), source, count=1)

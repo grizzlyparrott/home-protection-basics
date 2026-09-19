@@ -84,3 +84,10 @@ Scope remains limited to the same ten HPB-A2 URLs. No other articles were change
 - HPB-A3 validator passed for all 10 pages: well-formed self-contained SVGs; title/description; 1200 × 675 dimensions; small asset budget; article alt/caption; canonical preservation; internal-link resolution; PNG social assets; Open Graph/Twitter metadata; ImageObject fields; and GA4 hooks.
 - Existing phase-one normalizer validation passed: 130 files checked, 0 failures. `git diff --check` passed.
 - Regenerated sitemap: 265 canonical URLs, 0 duplicate, canonical-mismatch, missing-canonical, or invalid-canonical exclusions.
+
+### Release follow-up
+
+- Deployed through the approved GitHub Pages `main` path in commits `b453e1f` and `c1603de` on 2026-09-19.
+- Live verification passed for every A3 URL: all 10 pages returned HTTP 200 and contained the A3 visual, Open Graph/Twitter metadata, `ImageObject`, and measurement script. A representative smoke-alarm page was also visually rendered in a browser: its 1200 × 675 SVG loaded at natural size with the intended alt text and safety caption.
+- The representative live SVG, PNG social card, visual CSS, and measurement script all returned HTTP 200. Social metadata references the PNG cards and uses `summary_large_image`; the in-article SVG remains the schema image.
+- The pages already carry the existing GA4 `G-7NMENZF6EK` initialization; the A3 event layer attaches to that implementation without a new analytics architecture. Verifying that a real event appears in the GA4 property requires property/realtime access and remains outside static-page verification.
