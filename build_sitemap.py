@@ -18,11 +18,11 @@ BASE_URL = "https://homeprotectionbasics.com"
 ROOT_DIR = Path(__file__).resolve().parent
 
 # Output sitemap file name
-OUTPUT_FILE = "sitemap.xml"
+OUTPUT_FILE = ROOT_DIR / "sitemap.xml"
 
 # Ignore these directories (add more if needed)
-IGNORE_DIRS = {".git", ".github", "__pycache__", "node_modules", "artifacts", "scripts"}
-IGNORE_PREFIXES = ("artifacts/", "scripts/", "rescue/")
+IGNORE_DIRS = {".git", ".github", "__pycache__", "node_modules", "artifacts", "project-records", "scripts"}
+IGNORE_PREFIXES = ("artifacts/", "project-records/", "scripts/", "rescue/")
 
 
 # =======================
